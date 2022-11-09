@@ -1,0 +1,16 @@
+{
+  "extends": "",
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strict": true
+  },
+  "exclude": [
+    "node_modules",
+    "packages/*/dist",
+    "packages/*/node_modules"
+  ],
+  "include": [
+    "packages/*/src"
+  ]
+}

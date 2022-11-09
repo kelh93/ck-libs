@@ -1,0 +1,15 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "useWorkspaces": true,
+  "version": "independent",
+  "npmClient": "pnpm",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore(release): release"
+    }
+  },
+  "ignoreChanges": ["**/node_modules/**", "**/dist/**", "**/__tests__/**"]
+}
