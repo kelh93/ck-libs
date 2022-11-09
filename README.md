@@ -107,4 +107,34 @@ lerna notice cli v6.0.3
 lerna info versioning independent
 lerna ERR! ENOCOMMIT No commits in this repository. Please commit something before using version
 ```
-需要先提交本地代码。建立git repo，提交代码。
+需要先提交本地代码。建立git repo，提交代码✅。再次尝试`lerna publish`
+```bash
+# 报错❌
+lerna notice cli v6.0.3
+lerna info versioning independent
+lerna ERR! Error: Command failed with exit code 1: git remote update
+lerna ERR! fatal: unable to access 'https://github.com/kelh93/ck-libs.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+lerna ERR! error: Could not fetch origin
+lerna ERR! Fetching origin
+lerna ERR!     at makeError (/Users/rain/.nvm/versions/node/v16.18.0/lib/node_modules/lerna/node_modules/execa/lib/error.js:60:11)
+lerna ERR!     at Function.module.exports.sync (/Users/rain/.nvm/versions/node/v16.18.0/lib/node_modules/lerna/node_modules/execa/index.js:194:17)
+lerna ERR!     at Object.execSync (/Users/rain/.nvm/versions/node/v16.18.0/lib/node_modules/lerna/node_modules/@lerna/child-process/index.js:39:16)
+lerna ERR!     at updateRemote (/Users/rain/.nvm/versions/node/v16.18.0/lib/node_modules/lerna/node_modules/@lerna/version/lib/is-behind-upstream.js:34:16)
+lerna ERR!     at isBehindUpstream (/Users/rain/.nvm/versions/node/v16.18.0/lib/node_modules/lerna/node_modules/@lerna/version/lib/is-behind-upstream.js:16:3)
+lerna ERR!     at VersionCommand.initialize (/Users/rain/.nvm/versions/node/v16.18.0/lib/node_modules/lerna/node_modules/@lerna/version/index.js:156:9)
+lerna ERR! Error: Command failed with exit code 1: git remote update
+lerna ERR! fatal: unable to access 'https://github.com/kelh93/ck-libs.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+lerna ERR! error: Could not fetch origin
+lerna ERR! Fetching origin
+lerna ERR!     at makeError (/Users/rain/.nvm/versions/node/v16.18.0/lib/node_modules/lerna/node_modules/execa/lib/error.js:60:11)
+lerna ERR!     at Function.module.exports.sync (/Users/rain/.nvm/versions/node/v16.18.0/lib/node_modules/lerna/node_modules/execa/index.js:194:17)
+lerna ERR!     at Object.execSync (/Users/rain/.nvm/versions/node/v16.18.0/lib/node_modules/lerna/node_modules/@lerna/child-process/index.js:39:16)
+lerna ERR!     at updateRemote (/Users/rain/.nvm/versions/node/v16.18.0/lib/node_modules/lerna/node_modules/@lerna/version/lib/is-behind-upstream.js:34:16)
+lerna ERR!     at isBehindUpstream (/Users/rain/.nvm/versions/node/v16.18.0/lib/node_modules/lerna/node_modules/@lerna/version/lib/is-behind-upstream.js:16:3)
+lerna ERR!     at VersionCommand.initialize (/Users/rain/.nvm/versions/node/v16.18.0/lib/node_modules/lerna/node_modules/@lerna/version/index.js:156:9)
+lerna ERR! lerna Command failed with exit code 1: git remote update
+lerna ERR! lerna fatal: unable to access 'https://github.com/kelh93/ck-libs.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+lerna ERR! lerna error: Could not fetch origin
+lerna ERR! lerna Fetching origin
+
+```
